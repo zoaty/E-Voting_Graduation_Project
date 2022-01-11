@@ -26,7 +26,7 @@
                         </div>
 
                         <?php
-                            $voteEndingDate = new DateTime("01/13/2022");
+                            $voteEndingDate = new DateTime("2022/01/10");
                             $currentDate = new DateTime;
                         ?>
 

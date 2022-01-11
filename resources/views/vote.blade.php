@@ -2,7 +2,19 @@
   
   @section('content')
     <div class="row">
-        
+      
+    <?php
+      $voteEndDate = $candidates[0]->voteEndDate;
+      $voteEndingDate = new DateTime($voteEndDate);
+      $currentDate = new DateTime;
+    ?>
+
+    @if($voteEndingDate >= $currentDate)
+      <div class="d-flex flex-column mx-auto mt-5">
+        <h1 class="display-4">Final Voting Date for this voting is: </h1>
+        <p class="text-center" style="font-size:60px; font-weight:700;">{{$candidates[0]->finish}} 23:59</p>
+      </div>
+
       <form class="d-flex col border border-dark" method="POST" action="{{route('vote.store')}}">
         @csrf
           <div class="col">
@@ -225,7 +237,11 @@
             </div>
           </div>
       </form>
-
+    @else
+    <div class="mx-auto mt-5">
+      <h1 class="display-4" style="font-size:60px; font-weight:700;">This Voting has ended</h1>
+    </div>
+    @endif
     </div>
 
     <div class="row">
