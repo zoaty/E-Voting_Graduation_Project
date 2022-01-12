@@ -56,7 +56,7 @@
         <li class="nav-item">
           <a class="nav-link" href="{{route('admin.index')}}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span style="font-size:25px; font-weight: bold;">User Manual</span></a> 
+            <span style="font-size:25px; font-weight: bold;">Dashboard</span></a> 
         </li>
 
         <!-- Divider -->

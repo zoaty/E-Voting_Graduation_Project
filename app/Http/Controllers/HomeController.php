@@ -35,4 +35,9 @@ class HomeController extends Controller
 
         return view('contact');
     }
+
+    public function manual(){
+
+        return view('user-manual');
+    }
 }

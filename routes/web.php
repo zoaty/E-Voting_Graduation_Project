@@ -20,6 +20,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/post/{post}', [App\Http\Controllers\PostController::class, 'show'])->name('post');
 Route::get('/about', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('show.about');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('show.contact');
+Route::get('/user-manual', [App\Http\Controllers\HomeController::class, 'manual'])->name('manual-user');
 
 Route::middleware('auth')->group(function(){
   Route::get('/admin', [App\Http\Controllers\AdminsController::class, 'index'])->name('admin.index');

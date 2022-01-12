@@ -30,7 +30,7 @@
       <div class="navbar-brand-icon rotate-n-13">
         <img src="{{ asset('Profile-Images/evoting-logo.png') }}" alt="logo-image">
       </div>
-      <a class="navbar-brand ml-2" href="{{route('home')}}"><h2>HOME</h2></a>
+      <a class="navbar-brand ml-2" href="{{route('home')}}"><h2>Cyprus E-Voting System</h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,6 +56,10 @@
           @endif
 
           <li class="nav-item">
+            <a class="nav-link" href="{{route('manual-user')}}"><h4>User Manual</h4></a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="{{route('show.about')}}"><h4>About Us</h5></a>
           </li>
 
@@ -71,11 +75,10 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row">
-
+    <div class="row border">
+      
       <!-- Blog Entries Column -->
       <div class="col">
-
         @yield('content')
 
       </div>

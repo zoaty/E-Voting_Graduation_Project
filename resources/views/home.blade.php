@@ -2,6 +2,50 @@
 
 @section('content')
 <div class="row">
+<div class="col-4 mt-5">
+        <img src="{{ asset('Profile-Images/1.jpeg') }}" alt="homepage-design">
+      </div>
+
+      <div class="col mt-5 text-center" style="font-size:30px; font-weight:650;">
+        <p>Welcome to Cyprus E-Voting Website.</p>
+        <p>This website serves as an online voting system where you can cast your vote safely.</p>
+      </div>
+    </div>
+
+    <div class="row mt-3 border">
+      <div class="col mt-5 text-center" style="font-size:30px; font-weight:650;">
+        <p>Easy to vote.</p>
+        <p>Just login and cast your vote!</p>
+      </div>
+
+      <div class="col-4 mt-5">
+          <img src="{{ asset('Profile-Images/2.jpeg') }}" alt="homepage-design">
+      </div>
+    </div>
+
+    <div class="row mt-3 border">
+      <div class="col-4 mt-5">
+        <img src="{{ asset('Profile-Images/3.jpeg') }}" alt="homepage-design">
+      </div>
+
+      <div class="col mt-5 text-center" style="font-size:30px; font-weight:650;">
+        <p>Safe.</p>
+        <p>Lots of security precautions to secure your vote.</p>
+      </div>
+    </div>
+    
+    <div class="row mt-3 border">
+      <div class="col mt-5 text-center" style="font-size:30px; font-weight:650;">
+        <p>Simple to use.</p>
+        <p>We tried to design a simple website for everyone to use.</p>
+        <p>If you have issues, you can have a look at the user manual!</p>
+      </div>
+
+      <div class="col-4 mt-5">
+          <img src="{{ asset('Profile-Images/4.jpeg') }}" alt="homepage-design">
+      </div>
+
+    </div>
         <!-- Announcements -->
         @foreach($posts as $post)
         <div class="card my-5">

@@ -1,9 +1,7 @@
 <x-admin-master>
   @section('content')
-    <h1>Voting Topics are going to be here.</h1>
-
-
     <div class="mt-3">
+
       <table class="table table-bordered" id="dataTable" style="font-size:30px;" width="100%" cellspacing="0">
         <thead>
           <tr>
@@ -44,6 +42,7 @@
           </tr>
         </tbody>
       </table>
+      
     </div>
   @endsection
 </x-admin-master>

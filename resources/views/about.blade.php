@@ -25,18 +25,9 @@
                             <img class="border border-dark" src="{{ asset('Profile-Images/Doğancan.jpg') }}" alt="about-image">
                         </div>
 
-                        <?php
-                            $voteEndingDate = new DateTime("2022/01/10");
-                            $currentDate = new DateTime;
-                        ?>
-
-                        @if($voteEndingDate > $currentDate)
-                            <h2 class="mb-3">Doğancan Örskıran</h2>
-                            <p>Department of Computer Informations Sysytems</p>
-                            <p style="font-weight:900">Web Design/Development</p>
-                        @else
-                            <p>Outdated</p>
-                        @endif
+                        <h2 class="mb-3">Doğancan Örskıran</h2>
+                        <p>Department of Computer Informations Sysytems</p>
+                        <p style="font-weight:900">Web Design/Development</p>
                     </div>
                 </div>
 
